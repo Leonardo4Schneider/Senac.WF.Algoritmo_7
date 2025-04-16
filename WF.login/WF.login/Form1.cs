@@ -75,5 +75,15 @@ namespace WF.login
                 Application.Exit();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button2_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
