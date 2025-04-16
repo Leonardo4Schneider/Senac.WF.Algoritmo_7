@@ -26,5 +26,54 @@ namespace WF.login
         {
 
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "Usuario")
+                textBox2.Text = String.Empty;
+
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            if (textBox2.Text == String.Empty)
+                textBox2.Text = "Usuario";
+        }
+
+        private void textBox3_Enter(object sender, EventArgs e)
+        {
+            if (textBox3.Text == "Senha")
+                textBox3.Text = String.Empty;
+
+
+        }
+
+        private void textBox3_Leave(object sender, EventArgs e)
+        {
+            if (textBox3.Text == String.Empty)
+                textBox3.Text = "Senha";
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var resposta = MessageBox.Show("Deseja encerrar o programa?", "Titulo",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+            if (resposta == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }
