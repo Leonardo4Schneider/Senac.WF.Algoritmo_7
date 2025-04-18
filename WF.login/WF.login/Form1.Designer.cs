@@ -185,6 +185,7 @@
             Controls.Add(button1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Opacity = 0.8D;
             Text = "Form1";

@@ -83,7 +83,9 @@ namespace WF.login
 
         private void button2_Enter(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var formPrincipal = new FormPrincipal();
+            formPrincipal.Show();
         }
     }
 }
