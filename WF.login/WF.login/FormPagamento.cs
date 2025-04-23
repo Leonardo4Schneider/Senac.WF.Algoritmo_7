@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WF.login
 {
-    public partial class FormPrincipal : Form
+    public partial class FormPagamento : Form
     {
-        public FormPrincipal()
+        public FormPagamento()
         {
             InitializeComponent();
         }
@@ -26,17 +26,6 @@ namespace WF.login
             {
                 Application.Exit();
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnProdutos_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            new FormProdutos().Show();
         }
     }
 }

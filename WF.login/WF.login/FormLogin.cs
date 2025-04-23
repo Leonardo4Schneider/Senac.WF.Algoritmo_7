@@ -1,15 +1,17 @@
 namespace WF.login
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var formPrincipal = new FormPrincipal();
+            formPrincipal.Show();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -81,11 +83,6 @@ namespace WF.login
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void button2_Enter(object sender, EventArgs e)
-        {
-            this.Hide();
-            var formPrincipal = new FormPrincipal();
-            formPrincipal.Show();
-        }
+        
     }
 }

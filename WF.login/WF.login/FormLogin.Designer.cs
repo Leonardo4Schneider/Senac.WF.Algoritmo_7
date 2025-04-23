@@ -1,6 +1,6 @@
 ﻿namespace WF.login
 {
-    partial class Form1
+    partial class FormLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             textBox2 = new TextBox();
@@ -154,7 +154,7 @@
             button2.Text = "X";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
-            button2.Enter += button2_Enter;
+            button2.Enter += button2_Click;
             // 
             // button3
             // 
